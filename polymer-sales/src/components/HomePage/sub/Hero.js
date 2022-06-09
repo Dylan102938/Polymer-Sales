@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 function Hero() {
     return (
@@ -7,8 +8,13 @@ function Hero() {
                 <h1 style={{margin: 0, fontWeight: 500}}>Optimal Prices,</h1>
                 <h1 style={{margin: 0, fontweight: 400}}>Revealed by Real Customers</h1>
                 <div style={{marginTop: "40px", display: "flex", columnGap: "10px"}}>
-                    <button style={{backgroundColor: 'var(--blue)', color: 'white', fontSize: '0.9rem'}} className='btn'>Learn More</button>
-                    <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}}className='btn'>Talk to Sales</button>
+                    <Link to='/product-info'>
+                        <button style={{backgroundColor: 'var(--blue)', color: 'white', fontSize: '0.9rem'}} className='btn'>Learn More</button>
+                    </Link>
+
+                    <Link to='/contact-us'>
+                        <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}}className='btn'>Talk to Sales</button>
+                    </Link>
                 </div>
             </div>
 

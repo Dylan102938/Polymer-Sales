@@ -74,6 +74,7 @@
     border-radius: 1rem;
     color: var(--white) !important;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .call-to-action h2 {

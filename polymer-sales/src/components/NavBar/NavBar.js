@@ -10,18 +10,30 @@ function NavBar() {
         <div className='navbar-wrapper'>
             <div className="nav-bar">
                 <div style={{width: "50%"}}>
-                    <img src={logo} />
+                    <Link to='/'>
+                        <img src={logo} />
+                    </Link>
                 </div>
 
                 <ul className="links">
-                    <li>Solutions</li>
-                    <li>Customers</li>
-                    <li>Pricing</li>
-                    <li>Company</li>
-                    <li>Talk to Sales</li>
+                    <Link to='/product-info'>
+                        <li>Solutions</li>
+                    </Link>
+                    <Link to='/'>
+                        <li>Customers</li>
+                    </Link>
+                    <Link to='/contact-us'>
+                        <li>Pricing</li>
+                    </Link>
+                    <Link to='/'>
+                        <li>Company</li>
+                    </Link>
+                    <Link to='/contact-us'>
+                        <li>Talk to Sales</li>
+                    </Link>
                 </ul>
 
-                <Link to='/hello'>
+                <Link to='/contact-us'>
                     Sign Up
                 </Link>
             </div>
