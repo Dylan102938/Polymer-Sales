@@ -5,7 +5,7 @@ import lottie2 from './assets/lottie-2.json';
 
 function Intro() {
     return (
-        <div className='main intro' style={{padding: "100px 0"}}>
+        <div className='main intro' style={{padding: "100px 2rem"}}>
             <div className="flex flex-row align-center" style={{columnGap: "100px"}}>
                 <div style={{width: "80%"}}>
                     <h2>
@@ -20,7 +20,7 @@ function Intro() {
                         animationData={lottie1} 
                         background="transparent"  
                         speed={1}  
-                        style={{width: "600px", height: "600px"}} 
+                        style={{width: "500px", height: "500px"}} 
                         loop play 
                     />
                 </div>

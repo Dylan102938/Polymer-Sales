@@ -62,8 +62,8 @@
     background: url("../../img/hero-image.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     display: flex;
     align-items: center;
 }
@@ -72,9 +72,8 @@
     padding: 100px;
     background-color: var(--blue);
     border-radius: 1rem;
-    box-sizing: border-box;
     color: var(--white) !important;
-    
+    justify-content: space-between;
 }
 
 .call-to-action h2 {
