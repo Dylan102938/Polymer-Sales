@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1fa5ae28.css",
+    "main.js": "/static/js/main.8e48853f.js",
+    "static/js/787.0364f199.chunk.js": "/static/js/787.0364f199.chunk.js",
+    "static/media/call-to-action.png": "/static/media/call-to-action.9c1f14ecc188161f1e0b.png",
+    "static/media/logo-full.svg": "/static/media/logo-full.bd3c82903037e5dcf2e758a227f6b488.svg",
+    "static/media/hero-image.jpg": "/static/media/hero-image.a0b37ff4fdde3946911d.jpg",
+    "index.html": "/index.html",
+    "main.1fa5ae28.css.map": "/static/css/main.1fa5ae28.css.map",
+    "main.8e48853f.js.map": "/static/js/main.8e48853f.js.map",
+    "787.0364f199.chunk.js.map": "/static/js/787.0364f199.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fa5ae28.css",
+    "static/js/main.8e48853f.js"
+  ]
+}
