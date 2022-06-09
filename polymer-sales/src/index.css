@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&display=swap');
+@import url("https://use.typekit.net/ppl1krb.css");
+
+:root {
+  --blue: #3535E5;
+  --white: #ffffff;
+  --opal: #ef6461;
+  --light-blue: #add9f4;
+  --mint: #f3f8f2;
+  --gray: gray;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +17,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.btn {
+  border: none;
+  padding: 15px 30px;
+  font-family: 'Mulish', sans-serif;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.align-center {
+  align-items: center;
 }
