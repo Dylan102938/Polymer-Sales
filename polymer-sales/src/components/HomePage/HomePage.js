@@ -11,6 +11,11 @@ function HomePage() {
             <NavBar />
             <Hero />
             <Intro />
+            <div style={{height: '300vh'}}>
+                <div style={{position: 'sticky', width: '100%', height: '100vh', backgroundColor: 'yellow', top: 0}}>
+
+                </div>
+            </div>
             <CallToAction />
         </div>
     )
