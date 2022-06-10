@@ -8,7 +8,7 @@ function CallToAction() {
                     <h2>Ready to Try Polymer?</h2>
                     <p>Contact Sales and Get a Free Trial Today.</p>
                     <Link to='/contact-us'>
-                        <button className='btn'>Book a Free Demo</button>
+                        <button className='custom-btn'>Book a Free Demo</button>
                     </Link>
                 </div>
 

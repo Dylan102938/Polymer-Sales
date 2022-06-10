@@ -8,6 +8,7 @@
   --light-blue: #add9f4;
   --mint: #f3f8f2;
   --gray: gray;
+  --background-gray: rgba(241, 245, 249, 1);
 }
 
 body {
@@ -32,7 +33,7 @@ code {
   padding: 0 3rem;
 }
 
-.btn {
+.custom-btn {
   border: none;
   padding: 15px 30px;
   font-family: 'Mulish', sans-serif;
@@ -54,4 +55,19 @@ code {
 
 .align-center {
   align-items: center;
+}
+
+.input-themed {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  padding: 1.2rem;
+  background-color: var(--background-gray);
+  border: none;
+  width: 100%;
+  box-sizing: border-box; 
+  border-radius: 0.2rem;
+}
+
+.input-themed:focus {
+  outline: none;
 }

@@ -14,7 +14,7 @@ function Intro() {
                     </h2>
                     <p>Thousands of consumers make buying decisions in Polymer’s simulated e-commerce marketplace. Their aggregated behavior at different price points creates a detailed picture of price elasticity. Pricing models based on sparse historical data is a thing of the past.</p>
                     <Link to='/product-info'>
-                        <button className='btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
+                        <button className='custom-btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
                     </Link>
                 </div>
 
@@ -47,7 +47,7 @@ function Intro() {
                         </h2>
                         <p>Buying decisions are not made in a vaccum. Polymer presents your product to surveyed customers alongside competitors' offerings and key decison drivers such as reviews, shipping time, and product description.</p>
                         <Link to='/product-info'>
-                            <button className='btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
+                            <button className='custom-btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
                         </Link>
                     </div> 
                 </div>

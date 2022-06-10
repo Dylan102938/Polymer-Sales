@@ -1,2 +1,3 @@
 polymer-sales.pem*
 backend/node_modules/*
+backend/sendgrid.env

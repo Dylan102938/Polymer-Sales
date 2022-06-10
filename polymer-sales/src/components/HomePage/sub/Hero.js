@@ -9,11 +9,11 @@ function Hero() {
                 <h1 style={{margin: 0, fontweight: 400}}>Revealed by Real Customers</h1>
                 <div style={{marginTop: "40px", display: "flex", columnGap: "10px"}}>
                     <Link to='/product-info'>
-                        <button style={{backgroundColor: 'var(--blue)', color: 'white', fontSize: '0.9rem'}} className='btn'>Learn More</button>
+                        <button style={{backgroundColor: 'var(--blue)', color: 'white', fontSize: '0.9rem'}} className='custom-btn'>Learn More</button>
                     </Link>
 
                     <Link to='/contact-us'>
-                        <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}}className='btn'>Talk to Sales</button>
+                        <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}}className='custom-btn'>Talk to Sales</button>
                     </Link>
                 </div>
             </div>
