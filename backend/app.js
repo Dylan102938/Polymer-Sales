@@ -3,7 +3,7 @@ const app = express();
 
 const fs = require('fs');
 const https = require('https');
-// const http = require('http');
+const http = require('http');
 const path = require('path');
 
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/trypolymer.com/privkey.pem', 'utf8');
@@ -15,6 +15,8 @@ const credentials = {
 	cert: certificate,
 	ca: ca
 }
+
+app.enable('trust proxy');
 
 const sgMail = require('@sendgrid/mail');
 const bodyParser = require('body-parser');
@@ -36,7 +38,7 @@ app.post('/send-mail', jsonParser, (req, res) => {
 	const jobTitle = req.body.jobTitle;
 	const message = req.body.message;
 	const msg = {
-		to: 'dylan@trypolymer.com',
+		to: 'ted@trypolymer.com',
 		from: 'dylan@trypolymer.com',
 		replyTo: replyTo,
 		subject: 'Polymer Sales Inquiry',
@@ -49,10 +51,10 @@ app.post('/send-mail', jsonParser, (req, res) => {
 	}
 
 	sgMail.send(msg).then(() => {
-		res.send('Email sent');
+		res.send(JSON.stringify({success: 1, text: 'success'}));
 	})
 	.catch((error) => {
-		res.send(error);
+		res.send(JSON.stringify({success: 0, text: error}));
 	});
 });
 
@@ -62,7 +64,12 @@ httpsServer.listen(443, () => {
 	console.log('HTTPS Server running on port 443');
 });
 
-// const httpServer = http.createServer(app);
-// httpServer.listen(8080, () => {
-// 	console.log('listening on port 8080');
-// });
+const httpApp = express();
+httpApp.get("*", function(req, res, next) {
+	res.redirect("https://" + req.headers.host + req.path);
+});
+
+const httpServer = http.createServer(httpApp);
+httpServer.listen(80, () => {
+	console.log('HTTP Server running on port 80');
+});
