@@ -18,7 +18,7 @@ function Hero() {
                 </div>
             </div>
 
-            <div className="our-customers">
+            <div className="our-customers" style={{display: 'none'}}>
                 <div style={{marginBottom: "40px"}}>Servicing the world's most reliable enterprise companies</div>
                 <ul>
                     <li><img src='https://scale.com/static/images/logos/customers/brex.svg' /></li>

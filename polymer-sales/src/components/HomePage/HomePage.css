@@ -17,6 +17,7 @@
     width: 100%;
     max-width: 1400px;
     padding: 0;
+    animation: 0.5s ease-out 0s 1 fadeInFromBottom;
 }
 
 .our-customers {
@@ -51,6 +52,7 @@
     font-family: stolzl, sans-serif;
     font-weight: 400;
     font-size: 3rem;
+    margin: 0;
 }
 
 .intro p {
@@ -93,6 +95,75 @@
 .call-to-action button {
     background-color: var(--light-blue);
     margin-top: 100px;
+}
+
+.process-container {
+    height: 400vh;
+    margin-bottom: 100px;
+}
+
+.process {
+    background-color: var(--light-blue);
+    height: calc(100vh - 60px - 2rem);
+    padding-top: calc(60px + 2rem);
+    position: sticky;
+    top: 0;
+}
+
+.process h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: stolzl, sans-serif;
+    color: var(--mint);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.process-item {
+    padding: 30px;
+    border-radius: 0.4rem;
+}
+
+.process-item.active {
+    background-color: #6bb9ce;
+    color: white;
+}
+
+.process-item h2 {
+    font-size: 1.3rem;
+    font-family: stolzl, sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.process-item p {
+    font-size: 0.9rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.image-container div {
+    height: 45vh;
+    padding: 60px 0 60px 120px;
+    background: url('../../img/hero-image.jpg');
+    border-radius: 1rem;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+}
+
+.image-container img {
+    max-height: 100%;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 1;
+}
+
+.image-container img.hidden-img {
+    transform: translate(0, 20px);
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.3s, transform 0.3s;
 }
 
 @media (min-width: 1024px) {

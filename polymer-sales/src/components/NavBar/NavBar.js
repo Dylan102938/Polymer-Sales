@@ -1,17 +1,27 @@
 import "./NavBar.css";
-import React, { Component } from 'react';
+import React, {Component, useRef} from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../../img/logo-full.svg';
-
 function NavBar() {
+    const ref = useRef();
+    window.addEventListener('scroll', () => {
+        let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        try {
+            if (scrollTop > ref.current.clientHeight) {
+                document.getElementsByClassName("navbar-wrapper")[0].classList.add("translucent");
+            } else {
+                document.getElementsByClassName("navbar-wrapper")[0].classList.remove("translucent");
+            }
+        } catch (e) {}
+    });
+
 
     return (
-        <div className='navbar-wrapper'>
+        <div className='navbar-wrapper' ref={ref}>
             <div className="nav-bar">
                 <div style={{width: "50%"}}>
                     <Link to='/'>
-                        <img src={logo} />
+                        <img src={require('../../img/logo-full.png')} />
                     </Link>
                 </div>
 

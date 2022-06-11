@@ -7,7 +7,7 @@ import lottie2 from './assets/lottie-2.json';
 function Intro() {
     return (
         <div className='main intro' style={{padding: "100px 2rem"}}>
-            <div className="flex flex-row align-center" style={{columnGap: "100px"}}>
+            <div className="flex flex-row align-center" style={{columnGap: "100px", marginBottom: "80px"}}>
                 <div style={{width: "80%"}}>
                     <h2>
                         Real-World Research, No Guesswork.
