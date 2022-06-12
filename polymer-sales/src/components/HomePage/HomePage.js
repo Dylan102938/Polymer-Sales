@@ -4,6 +4,7 @@ import Hero from './sub/Hero';
 import Intro from './sub/Intro';
 import CallToAction from './sub/CallToAction';
 import Process from './sub/Process';
+import Footer from '../Footer/Footer';
 import React from 'react';
 
 function HomePage() {
@@ -14,6 +15,7 @@ function HomePage() {
             <Intro />
             <Process />
             <CallToAction />
+            <Footer />
         </div>
     )
 }

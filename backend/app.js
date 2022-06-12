@@ -58,6 +58,11 @@ app.post('/send-mail', jsonParser, (req, res) => {
 	});
 });
 
+// const httpServer = http.createServer(app);
+// httpServer.listen(8080, () => {
+// 	console.log('HTTP server running on port 8080');
+// });
+
 const httpsServer = https.createServer(credentials, app);
 
 httpsServer.listen(443, () => {

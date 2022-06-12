@@ -52,7 +52,7 @@ code {
 .main {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 .custom-btn {
@@ -101,5 +101,9 @@ code {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.invisible {
+  opacity: 0;
 }

@@ -29,23 +29,13 @@ function NavBar() {
                     <Link to='/product-info'>
                         <li>Solutions</li>
                     </Link>
-                    <Link to='/'>
-                        <li>Customers</li>
-                    </Link>
                     <Link to='/contact-us'>
                         <li>Pricing</li>
                     </Link>
-                    <Link to='/'>
-                        <li>Company</li>
-                    </Link>
                     <Link to='/contact-us'>
-                        <li>Talk to Sales</li>
+                        <li>Contact Us</li>
                     </Link>
                 </ul>
-
-                <Link to='/contact-us'>
-                    Sign Up
-                </Link>
             </div>
         </div>
     )

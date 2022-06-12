@@ -1,22 +1,95 @@
 import NavBar from '../NavBar/NavBar';
+import Footer from '../Footer/Footer';
 import './ContactUs.css';
+import { useEffect } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ContactUs() {
+    const clearLoading = () => {
+        document.getElementById('loading').classList.add('invisible');
+        setTimeout(() => {
+            document.getElementById('loading').classList.add('hidden');
+        }, 500);
+    }
+
+    useEffect(() => {
+        setTimeout(() => {
+            clearLoading();
+        }, 500);
+    }, []);
+
+    const mail_format = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    const toastOptions = {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    }
+
     const handleSubmit = event => {
         event.preventDefault();
-        
-        let xhr = new XMLHttpRequest();
-        xhr.open("POST", "/send-mail", true);
-        xhr.setRequestHeader('Content-Type', 'application/json');
-        xhr.send(JSON.stringify({
+        document.getElementById('loading').classList.remove('hidden');
+        document.getElementById('loading').classList.remove('invisible');
+
+        const body = {
             workEmail: document.getElementsByName('work-email')[0].value,
             firstName: document.getElementsByName('first-name')[0].value,
             lastName: document.getElementsByName('last-name')[0].value,
             company: document.getElementsByName('company')[0].value,
             industry: document.getElementsByName('industry')[0].value,
             jobTitle: document.getElementsByName('job-title')[0].value,
-            message: document.getElementsByName('message')[0].value,
-        }));
+            message: document.getElementsByName('message')[0].value
+        }
+
+        for (let k in body) {
+            if (!body[k]) {
+                toast.error("Please fill out all form fields!", toastOptions);
+                clearLoading();
+                return;
+            }
+        }
+
+        if (!body.workEmail.toLowerCase().match(mail_format)) {
+            toast.error("Please enter a valid email!", toastOptions);
+            clearLoading();
+            return;
+        }
+
+        fetch("/send-mail", {
+            method: "post",
+            body: JSON.stringify({
+                workEmail: document.getElementsByName('work-email')[0].value,
+                firstName: document.getElementsByName('first-name')[0].value,
+                lastName: document.getElementsByName('last-name')[0].value,
+                company: document.getElementsByName('company')[0].value,
+                industry: document.getElementsByName('industry')[0].value,
+                jobTitle: document.getElementsByName('job-title')[0].value,
+                message: document.getElementsByName('message')[0].value
+            }),
+            mode: "cors",
+            headers: new Headers({
+                "Content-type": "application/json"
+            })
+        }).then(response => {
+            clearLoading();
+            response.json().then(json => {
+                if (json.success === 1) {
+                    toast.success('Email sent successfully!', toastOptions);
+                } else {
+                    toast.error('Email couldn\'t send!', toastOptions);
+                }
+            }).catch(e => {
+                toast.error('Something went wrong. Please try again later.', toastOptions);
+            });
+        }).catch(e => {
+            clearLoading();
+            toast.error('Something went wrong. Please try again later.', toastOptions);
+        });
     }
     
     return (
@@ -75,6 +148,20 @@ function ContactUs() {
                     </div>
                 </div>
             </div>
+
+            <Footer />
+
+            <ToastContainer
+                position="bottom-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 }
