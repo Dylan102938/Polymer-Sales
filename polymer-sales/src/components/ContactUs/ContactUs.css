@@ -1,9 +1,8 @@
 .contact-us .header {
     height: 55vh;
     justify-content: center;
-    background: url('../../img/hero-image.jpg');
     background-size: cover;
-    background-position: top;
+    background: url('../../img/hero-image.jpg') top;
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
 }
 

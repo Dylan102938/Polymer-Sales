@@ -107,3 +107,10 @@ code {
 .invisible {
   opacity: 0;
 }
+
+.text-gradient {
+  background: linear-gradient(90deg,#d1aad7,#c88bc4 25%,#7b8fdd 50%,#86bff2 74.87%,#bbdef2 99.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
