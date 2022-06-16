@@ -66,7 +66,7 @@ function ProductInfo() {
                                     color: 'white',
                                     fontSize: '0.9rem',
                                     marginTop: '40px'
-                                }}>Talk to Sales</button>
+                                }}>Contact Us</button>
                             </Link>
                         </div>
                         <div style={{width: '45%'}}>
@@ -75,12 +75,12 @@ function ProductInfo() {
                     </div>
                 </div>
 
-                <div className="price-elasticity-estimator main">
+                <div className="price-elasticity-estimator main" id="prod-marketplace">
                     <span className="text-gradient">Use Cases</span>
                     <h1>Product Marketplace Sandbox</h1>
                     <p>
+                        Predict how customers will react when you or your competitors adjust their prices and be ready to respond.
                         Our built-in marketplace features allows real consumers to shop in a controlled environment, truly revealing how price points impact buying decisions.
-                        We want what makes your product unique to shine and allow consumers to consider these factors in their decisions.
                     </p>
 
                     <div className="card-container" style={{marginTop: "3rem"}}>
@@ -99,8 +99,9 @@ function ProductInfo() {
                             cardTitle="Better Reliability"
                             listItems={
                                 [
-                                    "Respondents receive no bias when shopping. Price changes are presented to each customer once and only once.",
-                                    "Product ordering on the marketplace can be fixed or random, eliminating price anchoring."
+                                    "Respondents experience no bias when shopping. Price changes are presented to each customer once and only once.",
+                                    "Product ordering on the marketplace can be fixed or random, eliminating price anchoring.",
+                                    "Access to a full range of e-commerce features and a realistic marketplace allow for more meaningful statistical insights."
                                 ]
                             } />
                         <ProductCard
@@ -108,20 +109,21 @@ function ProductInfo() {
                             cardTitle="Get Faster Results"
                             listItems={
                                 [
-                                    "Access to hundreds of thousands of survey respondents to get insights as quickly possible.",
+                                    "Access to millions of survey respondents to get insights as quickly possible.",
                                     "Marketplace results are ported to the analytics dashboard live, allowing instant feedback.",
-                                    "Start and cancel studies in just one click."
+                                    "Filter with hundreds of participant filters to reach your target demographic."
                                 ]
                             } />
                     </div>
                 </div>
 
-                <div className="price-elasticity-estimator main" style={{marginTop: 0, paddingTop: 0}}>
+                <div className="price-elasticity-estimator main" id="estimator" style={{marginTop: 0, paddingTop: 0}}>
                     <span className="text-gradient">Use Cases</span>
                     <h1>Price Elasticity Estimator</h1>
                     <p>
+                        How are sales affected when product prices are increased by 10%? Uncover small price adjustments that boost sales.
                         Access your raw study data, useful insights, and export your results all in one convenient analytics dashboard.
-                        Conduct pricing analytics without the hassle of data scaffolding and pipelining.
+                        Conduct pricing analytics without the hassle of data scaffolding and pipelining. 
                     </p>
 
                     <div className="card-container" style={{marginTop: "3rem"}}>
@@ -130,7 +132,7 @@ function ProductInfo() {
                             cardTitle="Simplified Statistics"
                             listItems={
                                 [
-                                    "Access all the stats you need to help you make pricing decisions on one platform, including variance, maximum error rate, confidence intervals, etc.",
+                                    "Access all the stats you need to help you make pricing decisions on one platform, including point-wise price elasticity, variance, maximum error rate, confidence intervals, etc.",
                                     "Use your own metrics with an easy-to-use function builder and display those results on your dashboard as well.",
                                 ]
                             }
@@ -147,7 +149,7 @@ function ProductInfo() {
                                 [
                                     "We provide full access to the raw user data that generate the statistics our platform provides.",
                                     "Easily work with data from different studies by downloading as Excel or working on our platform-provided editor.",
-                                    "Direct data pipelines to export data to your business's data solution provider."
+                                    "Direct pipelines to connect to your data solution provider of choice."
                                 ]
                             }
                             additionalStyles={{
@@ -176,9 +178,9 @@ function ProductInfo() {
                 <div className="callback">
                     <div className="main flex flex-row align-center">
                         <div>
-                            <h1>See What Polymer Can Do For You!</h1>
+                            <h1>See What Polymer Can Do For You</h1>
                             <Link to="/contact-us">
-                                <button className="custom-btn">Get Started</button>
+                                <button className="custom-btn" style={{marginTop: "40px"}}>Get Started Today</button>
                             </Link>
                         </div>
                     </div>

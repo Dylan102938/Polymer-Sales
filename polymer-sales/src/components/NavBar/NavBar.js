@@ -30,10 +30,9 @@ function NavBar() {
                         <li>Solutions</li>
                     </Link>
                     <Link to='/contact-us'>
-                        <li>Pricing</li>
-                    </Link>
-                    <Link to='/contact-us'>
-                        <li>Contact Us</li>
+                        <li>
+                            <button className="special-btn">Get Started Now</button>
+                        </li>
                     </Link>
                 </ul>
             </div>

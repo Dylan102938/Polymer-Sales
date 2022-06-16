@@ -13,7 +13,7 @@ function Hero() {
                     </Link>
 
                     <Link to='/contact-us'>
-                        <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}}className='custom-btn'>Talk to Sales</button>
+                        <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}}className='custom-btn'>Get Started</button>
                     </Link>
                 </div>
             </div>
