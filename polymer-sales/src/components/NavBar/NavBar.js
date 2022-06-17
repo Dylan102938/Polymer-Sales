@@ -31,7 +31,7 @@ function NavBar() {
                     </Link>
                     <Link to='/contact-us'>
                         <li>
-                            <button className="special-btn">Get Started Now</button>
+                            <button className="special-btn">Get Started</button>
                         </li>
                     </Link>
                 </ul>

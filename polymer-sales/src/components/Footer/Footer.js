@@ -44,7 +44,7 @@ function Footer() {
                                 <Link to="/">
                                     <li>Facebook</li>
                                 </Link>
-                                <Link to="/">
+                                <Link to="https://www.linkedin.com/company/polymeranalytics/">
                                     <li>Linkedin</li>
                                 </Link>
                                 <Link to="/">

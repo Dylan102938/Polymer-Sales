@@ -47,7 +47,7 @@ function Process() {
                             <div className="flex flex-col" style={{maxWidth: "700px"}}>
                                 <div className="process-item active">
                                     <h2>1. Design Your Experiment</h2>
-                                    <p>Input the products and price points to test. Choose filters (e.g demographics, shopping history) to select panel participants. Polymer does the rest and your experiment is ready to launch.</p>
+                                    <p>Input the products and price points to test. Choose filters (e.g., demographics, shopping history) to select panel participants. Polymer does the rest and your experiment is ready to launch.</p>
                                 </div>
 
                                 <div className="process-item">
@@ -57,7 +57,7 @@ function Process() {
 
                                 <div className="process-item">
                                     <h2>3. Analyze Data and Export Results</h2>
-                                    <p>Polymer displays key data such as optimal price and elasticity through an interactive dashboard. Results can be exported to Excel or converted into a Powerpoint for easy presenting.</p>
+                                    <p>Polymer displays key data such as optimal price and elasticity through an interactive dashboard. Results can be exported to Excel or converted into a Powerpoint presentation.</p>
                                 </div>
                             </div>
 

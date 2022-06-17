@@ -38,7 +38,7 @@ app.post('/send-mail', jsonParser, (req, res) => {
 	const jobTitle = req.body.jobTitle;
 	const message = req.body.message;
 	const msg = {
-		to: 'ted@trypolymer.com',
+		to: 'founders@trypolymer.com',
 		from: 'dylan@trypolymer.com',
 		replyTo: replyTo,
 		subject: 'Polymer Sales Inquiry',

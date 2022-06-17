@@ -45,7 +45,7 @@ function Intro() {
                         <h2>
                             Run Detailed Market Simulations.
                         </h2>
-                        <p>Buying decisions are not made in a vaccum. Polymer presents your product to surveyed customers alongside competitors' offerings and key decison drivers such as reviews, shipping time, and product description.</p>
+                        <p>Buying decisions are not made in a vacuum. Polymer presents your product to surveyed customers alongside competitors' offerings and key decison drivers such as reviews, shipping time, and product description.</p>
                         <Link to='/product-info'>
                             <button className='custom-btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
                         </Link>

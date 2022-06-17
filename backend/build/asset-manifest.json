@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.dda3ba4b.css",
-    "main.js": "/static/js/main.6330b4fb.js",
+    "main.css": "/static/css/main.81ccd247.css",
+    "main.js": "/static/js/main.dc6a0fec.js",
     "static/js/787.0364f199.chunk.js": "/static/js/787.0364f199.chunk.js",
+    "static/media/happy-office.jpg": "/static/media/happy-office.42ec7a32cec06090cecd.jpg",
     "static/media/call-to-action.png": "/static/media/call-to-action.9c1f14ecc188161f1e0b.png",
+    "static/media/ecommerce.jpg": "/static/media/ecommerce.d2c8d0c1f52226bdabc9.jpg",
     "static/media/marketplace.png": "/static/media/marketplace.2f53222d626931163ce3.png",
+    "static/media/statistics.jpg": "/static/media/statistics.540be71cb574300cf441.jpg",
     "static/media/filters.png": "/static/media/filters.2b9ac12033ba8564ef62.png",
     "static/media/logo-full.png": "/static/media/logo-full.5d44c229ea7f39e42c21.png",
     "static/media/results.png": "/static/media/results.5daa456a58a75bd89cce.png",
+    "static/media/solutions.svg": "/static/media/solutions.11fa2d4c3e47f8732f1b53f034285712.svg",
+    "static/media/transparency.svg": "/static/media/transparency.a5336d78b9037a5cd6e4b2d2737b250d.svg",
     "static/media/hero-image.jpg": "/static/media/hero-image.a0b37ff4fdde3946911d.jpg",
+    "static/media/simple-stats.svg": "/static/media/simple-stats.ab04c4cc38e62136250fe57571d9633d.svg",
+    "static/media/export-findings.svg": "/static/media/export-findings.ccd32a842aeae50d174448ff5533eaa8.svg",
     "index.html": "/index.html",
-    "main.dda3ba4b.css.map": "/static/css/main.dda3ba4b.css.map",
-    "main.6330b4fb.js.map": "/static/js/main.6330b4fb.js.map",
+    "main.81ccd247.css.map": "/static/css/main.81ccd247.css.map",
+    "main.dc6a0fec.js.map": "/static/js/main.dc6a0fec.js.map",
     "787.0364f199.chunk.js.map": "/static/js/787.0364f199.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dda3ba4b.css",
-    "static/js/main.6330b4fb.js"
+    "static/css/main.81ccd247.css",
+    "static/js/main.dc6a0fec.js"
   ]
 }

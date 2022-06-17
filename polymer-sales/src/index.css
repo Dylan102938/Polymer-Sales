@@ -63,6 +63,7 @@ code {
   cursor: pointer;
   transition-duration: 0.3s;
   background: linear-gradient(transparent,rgba(0, 0, 0, 0.1)) top/100% 800%;
+  font-weight: 700;
 }
 
 .custom-btn:hover {

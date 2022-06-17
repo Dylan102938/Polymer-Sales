@@ -79,7 +79,7 @@ function ProductInfo() {
                     <span className="text-gradient">Use Cases</span>
                     <h1>Product Marketplace Sandbox</h1>
                     <p>
-                        Predict how customers will react when you or your competitors adjust their prices and be ready to respond.
+	    		Present your product to surveyed customers alongside your top competitors.
                         Our built-in marketplace features allows real consumers to shop in a controlled environment, truly revealing how price points impact buying decisions.
                     </p>
 
@@ -121,7 +121,7 @@ function ProductInfo() {
                     <span className="text-gradient">Use Cases</span>
                     <h1>Price Elasticity Estimator</h1>
                     <p>
-                        How are sales affected when product prices are increased by 10%? Uncover small price adjustments that boost sales.
+                        How are sales affected when product prices are increased by 10%? Uncover price adjustments that boost sales.
                         Access your raw study data, useful insights, and export your results all in one convenient analytics dashboard.
                         Conduct pricing analytics without the hassle of data scaffolding and pipelining. 
                     </p>
