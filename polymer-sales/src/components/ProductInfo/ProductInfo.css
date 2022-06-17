@@ -63,6 +63,8 @@
     display: flex;
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.5);
     background: url("../../img/hero-image.jpg") top;
+    justify-content: center;
+    align-items: center;
 }
 
 .price-elasticity-estimator .card .img-container img {
