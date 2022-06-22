@@ -38,35 +38,87 @@ function Process() {
     });
 
     return (
-        <div className="process-container" ref={ref}>
-            <div className="process">
-                <div className="flex flex-row align-center" style={{height: "100%"}}>
-                    <div style={{width: "100%"}}>
-                        <h1>Crowdsourcing for Streamlined Insights</h1>
-                        <div className="flex flex-row align-center main" style={{padding: "0 2rem", justifyContent: "space-between", columnGap: "1rem"}}>
-                            <div className="flex flex-col" style={{maxWidth: "700px"}}>
-                                <div className="process-item active">
-                                    <h2>1. Design Your Experiment</h2>
-                                    <p>Input the products and price points to test. Choose filters (e.g., demographics, shopping history) to select panel participants. Polymer does the rest and your experiment is ready to launch.</p>
+        <div>
+            <div className="process-container" ref={ref}>
+                <div className="process">
+                    <div className="flex flex-row align-center" style={{height: "100%"}}>
+                        <div style={{width: "100%"}}>
+                            <h1>Crowdsourcing for Streamlined Insights</h1>
+                            <div className="flex flex-row align-center main" style={{padding: "0 2rem", justifyContent: "space-between", columnGap: "1rem"}}>
+                                <div className="flex flex-col" style={{maxWidth: "700px"}}>
+                                    <div className="process-item active">
+                                        <h2>1. Design Your Experiment</h2>
+                                        <p>Input the products and price points to test. Choose filters (e.g., demographics, shopping history) to select panel participants. Polymer does the rest and your experiment is ready to launch.</p>
+                                    </div>
+
+                                    <div className="process-item">
+                                        <h2>2. Panelists Shop</h2>
+                                        <p>Thousands of survey participants “shop” on a simulated marketplace, exactly as they would in real life. Polymer varies the prices shown and measures how buying behavior changes.</p>
+                                    </div>
+
+                                    <div className="process-item">
+                                        <h2>3. Analyze Data and Export Results</h2>
+                                        <p>Polymer displays key data such as optimal price and elasticity through an interactive dashboard. Results can be exported to Excel or converted into a Powerpoint presentation.</p>
+                                    </div>
                                 </div>
 
-                                <div className="process-item">
-                                    <h2>2. Panelists Shop</h2>
-                                    <p>Thousands of survey participants “shop” on a simulated marketplace, exactly as they would in real life. Polymer varies the prices shown and measures how buying behavior changes.</p>
-                                </div>
-
-                                <div className="process-item">
-                                    <h2>3. Analyze Data and Export Results</h2>
-                                    <p>Polymer displays key data such as optimal price and elasticity through an interactive dashboard. Results can be exported to Excel or converted into a Powerpoint presentation.</p>
+                                <div className="image-container">
+                                    <div>
+                                        <img className="process-image" src={require('./assets/filters.png')} />
+                                        <img className="hidden-img process-image" src={require('./assets/marketplace.png')} />
+                                        <img className="hidden-img process-image" src={require('./assets/results.png')} />
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                            <div className="image-container">
-                                <div>
+            <div className="hidden mobile-friendly process-container">
+                <div className="process main">
+                    <h1>Crowdsourcing for Streamlined Insights</h1>
+                    <div style={{marginBottom: "3rem"}}>
+                        <div className="process-item">
+                            <h2>1. Design Your Experiment</h2>
+                            <p>Input the products and price points to test. Choose filters (e.g., demographics, shopping history) to select panel participants. Polymer does the rest and your experiment is ready to launch.</p>
+                        </div>
+
+                        <div className="image-container">
+                            <div className="image-holder">
+                                <main>
                                     <img className="process-image" src={require('./assets/filters.png')} />
-                                    <img className="hidden-img process-image" src={require('./assets/marketplace.png')} />
-                                    <img className="hidden-img process-image" src={require('./assets/results.png')} />
-                                </div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style={{marginBottom: "3rem"}}>
+                        <div className="process-item">
+                            <h2>2. Panelists Shop</h2>
+                            <p>Thousands of survey participants “shop” on a simulated marketplace, exactly as they would in real life. Polymer varies the prices shown and measures how buying behavior changes.</p>
+                        </div>
+
+                        <div className="image-container">
+                            <div className="image-holder">
+                                <main>
+                                    <img className="process-image" src={require('./assets/marketplace.png')} />
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="process-item">
+                            <h2>3. Analyze Data and Export Results</h2>
+                            <p>Polymer displays key data such as optimal price and elasticity through an interactive dashboard. Results can be exported to Excel or converted into a Powerpoint presentation.</p>
+                        </div>
+
+                        <div className="image-container">
+                            <div className="image-holder">
+                                <main>
+                                    <img className="process-image" src={require('./assets/results.png')} />
+                                </main>
                             </div>
                         </div>
                     </div>

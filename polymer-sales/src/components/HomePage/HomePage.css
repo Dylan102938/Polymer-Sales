@@ -20,6 +20,12 @@
     animation: 0.5s ease-out 0s 1 fadeInFromBottom;
 }
 
+.hero-section .hero-buttons {
+    margin-top: 40px;
+    display: flex;
+    column-gap: 10px;
+}
+
 .our-customers {
     position: fixed;
     bottom: 60px;
@@ -46,6 +52,10 @@
 .our-customers li {
     display: flex;
     justify-content: center;
+}
+
+.intro {
+    padding: 100px 2rem;
 }
 
 .intro h2 {
@@ -166,8 +176,121 @@
     transition: opacity 0.3s, transform 0.3s;
 }
 
-@media (min-width: 1024px) {
-    .our-customers ul {
-        grid-template-columns: repeat(8, minmax(0, 1fr));
+@media screen and (max-width: 540px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .hero-section .hero-buttons {
+        display: block;
+    }
+
+    .hero-section .hero-buttons a {
+        width: 100%;
+    }
+
+    .hero-section .hero-buttons button {
+        width: 100%;
+    }
+
+    .get-started {
+        margin-top: 20px;
+    }
+
+    .intro.desktop-friendly {
+        display: none !important;
+    }
+
+    .intro.mobile-friendly {
+        display: block !important;
+    }
+
+    .intro.mobile-friendly h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro.mobile-friendly p {
+        display: none;
+    }
+
+    .intro.mobile-friendly .lottie-container {
+        margin-top: 20px;
+        width: 100% !important;
+        height: 400px !important;
+        justify-content: center;
+    }
+
+    .intro.mobile-friendly .lottie-container div {
+        width: 400px !important;
+        height: 400px !important;
+    }
+
+    .intro.mobile-friendly .custom-btn, .into.mobile-friendly a {
+        width: 100%;
+
+    }
+
+    .intro.mobile-friendly .custom-btn {
+        margin-top: 20px !important;
+    }
+
+    .intro.mobile-friendly .card-container {
+        margin-bottom: 80px;
+    }
+
+    .process-container.mobile-friendly {
+        display: block !important;
+        height: auto;
+    }
+
+    .process-container {
+        display: none;
+    }
+
+    .process-container.mobile-friendly .process {
+        height: auto;
+        padding: 100px 2rem;
+    }
+
+    .process-container.mobile-friendly .process h1 {
+        font-size: 2.5rem;
+    }
+
+    .process-container.mobile-friendly .process-item  {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .process-container.mobile-friendly .image-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .process-container.mobile-friendly .image-holder main {
+        width: 100%;
+        height: 85%;
+        position: relative;
+    }
+
+    .process-container.mobile-friendly .image-holder main img {
+        height: 100%;
+        position: absolute;
+        right: 0;
+    }
+
+    .call-to-action {
+        padding: 100px 2rem;
+        display: block;
+        text-align: center;
+    }
+
+    .call-to-action img {
+        display: none;
+    }
+
+    .call-to-action button, .call-to-action a {
+        width: 100%;
     }
 }

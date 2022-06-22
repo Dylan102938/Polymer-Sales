@@ -7,13 +7,13 @@ function Hero() {
             <div className='main'>
                 <h1 style={{margin: 0, fontWeight: 500}}>Optimal Prices,</h1>
                 <h1 style={{margin: 0, fontweight: 400}}>Revealed by Real Customers</h1>
-                <div style={{marginTop: "40px", display: "flex", columnGap: "10px"}}>
+                <div className="hero-buttons">
                     <Link to='/product-info'>
                         <button style={{backgroundColor: 'var(--blue)', color: 'white', fontSize: '0.9rem'}} className='custom-btn'>Learn More</button>
                     </Link>
 
                     <Link to='/contact-us'>
-                        <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}}className='custom-btn'>Get Started</button>
+                        <button style={{backgroundColor: 'var(--mint)', color: 'black', fontSize: '0.9rem'}} className=' get-started custom-btn'>Get Started</button>
                     </Link>
                 </div>
             </div>
