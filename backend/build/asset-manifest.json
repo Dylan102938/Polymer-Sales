@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.81ccd247.css",
-    "main.js": "/static/js/main.dc6a0fec.js",
+    "main.css": "/static/css/main.5716dd24.css",
+    "main.js": "/static/js/main.76339ca7.js",
     "static/js/787.0364f199.chunk.js": "/static/js/787.0364f199.chunk.js",
     "static/media/happy-office.jpg": "/static/media/happy-office.42ec7a32cec06090cecd.jpg",
     "static/media/call-to-action.png": "/static/media/call-to-action.9c1f14ecc188161f1e0b.png",
@@ -17,12 +17,12 @@
     "static/media/simple-stats.svg": "/static/media/simple-stats.ab04c4cc38e62136250fe57571d9633d.svg",
     "static/media/export-findings.svg": "/static/media/export-findings.ccd32a842aeae50d174448ff5533eaa8.svg",
     "index.html": "/index.html",
-    "main.81ccd247.css.map": "/static/css/main.81ccd247.css.map",
-    "main.dc6a0fec.js.map": "/static/js/main.dc6a0fec.js.map",
+    "main.5716dd24.css.map": "/static/css/main.5716dd24.css.map",
+    "main.76339ca7.js.map": "/static/js/main.76339ca7.js.map",
     "787.0364f199.chunk.js.map": "/static/js/787.0364f199.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81ccd247.css",
-    "static/js/main.dc6a0fec.js"
+    "static/css/main.5716dd24.css",
+    "static/js/main.76339ca7.js"
   ]
 }

@@ -86,9 +86,7 @@ function Process() {
 
                         <div className="image-container">
                             <div className="image-holder">
-                                <main>
-                                    <img className="process-image" src={require('./assets/filters.png')} />
-                                </main>
+                                <img className="process-image" src={require('./assets/filters.png')} />
                             </div>
                         </div>
                     </div>
@@ -101,9 +99,7 @@ function Process() {
 
                         <div className="image-container">
                             <div className="image-holder">
-                                <main>
-                                    <img className="process-image" src={require('./assets/marketplace.png')} />
-                                </main>
+                                <img className="process-image" src={require('./assets/marketplace.png')} />
                             </div>
                         </div>
                     </div>
@@ -116,9 +112,7 @@ function Process() {
 
                         <div className="image-container">
                             <div className="image-holder">
-                                <main>
-                                    <img className="process-image" src={require('./assets/results.png')} />
-                                </main>
+                                <img className="process-image" src={require('./assets/results.png')} />
                             </div>
                         </div>
                     </div>
