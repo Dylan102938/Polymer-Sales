@@ -117,7 +117,7 @@ function ContactUs() {
                         </div>
                     </div>
 
-                    <div style={{width: "50%", position: "relative"}}>
+                    <div className="contact-form-container" style={{width: "50%", position: "relative"}}>
                         <div className="contact-form">
                             <form>
                                 <h2 style={{marginBottom: '2rem', marginTop: 0}}>Get in Touch</h2>
