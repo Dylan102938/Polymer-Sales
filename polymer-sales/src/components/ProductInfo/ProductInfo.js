@@ -3,6 +3,7 @@ import NavBar from '../NavBar/NavBar';
 import Footer from '../Footer/Footer';
 import solutions from '../../img/solutions.svg';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import simpleStats from '../../img/simple-stats.svg';
 import transparency from '../../img/transparency.svg';
@@ -60,14 +61,14 @@ function ProductInfo() {
                         <div className="head">
                             <h1>Solutions</h1>
                             <p>Learn more about our offerings</p>
-                            <Link to='/contact-us'>
+                            <HashLink to='/contact-us#'>
                                 <button className="custom-btn" style={{
                                     backgroundColor: 'var(--blue)',
                                     color: 'white',
                                     fontSize: '0.9rem',
                                     marginTop: '40px'
                                 }}>Contact Us</button>
-                            </Link>
+                            </HashLink>
                         </div>
                         <div style={{width: '45%'}} className="head-img">
                             <img src={solutions} style={{width: '100%'}}/>
@@ -179,9 +180,9 @@ function ProductInfo() {
                     <div className="main flex flex-row align-center">
                         <div>
                             <h1>See What Polymer Can Do For You</h1>
-                            <Link to="/contact-us">
+                            <HashLink to="/contact-us#">
                                 <button className="custom-btn" style={{marginTop: "40px"}}>Get Started Today</button>
-                            </Link>
+                            </HashLink>
                         </div>
                     </div>
                 </div>

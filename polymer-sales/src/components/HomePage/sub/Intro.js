@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Lottie from 'react-lottie-player';
 import lottie1 from './assets/lottie-1.json';
 import lottie2 from './assets/lottie-2.json';
@@ -14,9 +14,9 @@ function Intro() {
                             Real-World Research, No Guesswork.
                         </h2>
                         <p>Thousands of consumers make buying decisions in Polymer’s simulated e-commerce marketplace. Their aggregated behavior at different price points creates a detailed picture of price elasticity. Pricing models based on sparse historical data is a thing of the past.</p>
-                        <Link to='/product-info'>
+                        <HashLink to='/product-info#'>
                             <button className='custom-btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
-                        </Link>
+                        </HashLink>
                     </div>
 
                     <div className="lottie-container">
@@ -47,9 +47,9 @@ function Intro() {
                                 Run Detailed Market Simulations.
                             </h2>
                             <p>Buying decisions are not made in a vacuum. Polymer presents your product to surveyed customers alongside competitors' offerings and key decison drivers such as reviews, shipping time, and product description.</p>
-                            <Link to='/product-info'>
+                            <HashLink to='/product-info#'>
                                 <button className='custom-btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
-                            </Link>
+                            </HashLink>
                         </div>
                     </div>
                 </div>
@@ -72,9 +72,9 @@ function Intro() {
                         />
                     </div>
 
-                    <Link to='/product-info'>
+                    <HashLink to='/product-info#'>
                         <button className='custom-btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
-                    </Link>
+                    </HashLink>
                 </div>
 
                 <div>
@@ -93,9 +93,9 @@ function Intro() {
                         />
                     </div>
 
-                    <Link to='/product-info'>
+                    <HashLink to='/product-info#'>
                         <button className='custom-btn' style={{backgroundColor: 'var(--blue)', color: 'var(--white)', marginTop: "60px"}}>Learn More</button>
-                    </Link>
+                    </HashLink>
                 </div>
             </div>
         </div>

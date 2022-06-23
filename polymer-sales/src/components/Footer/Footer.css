@@ -45,3 +45,17 @@ footer a {
     color: var(--gray);
     font-size: 0.9rem;
 }
+
+@media screen and (max-width: 540px) {
+    .footer-container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100% !important;
+        gap: 20px;
+    }
+}

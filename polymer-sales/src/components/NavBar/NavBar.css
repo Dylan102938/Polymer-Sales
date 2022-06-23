@@ -67,3 +67,64 @@
 .special-btn:hover {
     background-position: bottom;
 }
+
+@media screen and (max-width: 540px) {
+    .logo-small {
+        display: block !important;
+        height: 3rem !important;
+    }
+
+    .logo-full {
+        display: none;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .menu-container {
+        display: block !important;
+    }
+
+    .menu-container i {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .links {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding: 150px 2rem;
+        box-sizing: border-box;
+        font-size: 2rem !important;
+        row-gap: 1.5rem;
+        text-align: center;
+        z-index: 4;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    .from-right {
+        left: 100%;
+    }
+
+    #close-links {
+        display: block !important;
+        position: absolute;
+        top: 20px;
+        right: 2rem;
+        color: var(--gray);
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .links button, .links a {
+        width: 100%;
+    }
+}

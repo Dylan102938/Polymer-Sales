@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import React, {Component, useRef} from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function NavBar() {
     const ref = useRef();
@@ -15,26 +15,40 @@ function NavBar() {
         } catch (e) {}
     });
 
+    const openMenu = e => {
+        document.getElementsByClassName("links")[0].classList.remove("from-right");
+    }
+
+    const closeMenu = e => {
+        document.getElementsByClassName("links")[0].classList.add("from-right");
+    }
+
 
     return (
         <div className='navbar-wrapper' ref={ref}>
             <div className="nav-bar">
                 <div style={{width: "50%"}}>
-                    <Link to='/'>
-                        <img src={require('../../img/logo-full.png')} />
-                    </Link>
+                    <HashLink to='/#'>
+                        <img className="logo-full" src={require('../../img/logo-full.png')} />
+                        <img className="logo-small hidden" src={require('../../img/logo.png')} />
+                    </HashLink>
                 </div>
 
-                <ul className="links">
-                    <Link to='/product-info'>
+                <ul className="links from-right">
+                    <HashLink to='/product-info#'>
                         <li>Solutions</li>
-                    </Link>
-                    <Link to='/contact-us'>
+                    </HashLink>
+                    <HashLink to='/contact-us#'>
                         <li>
                             <button className="special-btn">Get Started</button>
                         </li>
-                    </Link>
+                    </HashLink>
+                    <span id="close-links" className="hidden" onClick={closeMenu}>✖</span>
                 </ul>
+
+                <div className="hidden menu-container">
+                    <i className='bx bx-menu' onClick={openMenu}></i>
+                </div>
             </div>
         </div>
     )

@@ -6,11 +6,11 @@ function Footer() {
     return (
         <footer>
             <div className="main">
-                <div className="flex flex-row" style={{justifyContent: 'space-between' }}>
+                <div className="flex flex-row footer-container" style={{justifyContent: 'space-between' }}>
                     <div style={{width: '40%'}}>
                         <img src={require('../../img/logo-full.png')} />
                     </div>
-                    <div className="flex flex-row" style={{justifyContent: 'space-between', width: '60%'}}>
+                    <div className="flex flex-row footer-links" style={{justifyContent: 'space-between', width: '60%'}}>
                         <div className="footer-list">
                             <ul>
                                 <li className="header">Products</li>
@@ -26,15 +26,15 @@ function Footer() {
                         <div className="footer-list">
                             <ul>
                                 <li className="header">Company</li>
-                                <Link to="/">
+                                <HashLink to="/#">
                                     <li>About</li>
-                                </Link>
-                                <Link to="/contact-us">
+                                </HashLink>
+                                <HashLink to="/contact-us#">
                                     <li>Pricing</li>
-                                </Link>
-                                <Link to="/product-info">
+                                </HashLink>
+                                <HashLink to="/product-info#">
                                     <li>Methodology</li>
-                                </Link>
+                                </HashLink>
                             </ul>
                         </div>
 
