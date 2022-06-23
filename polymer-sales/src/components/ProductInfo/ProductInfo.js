@@ -57,7 +57,7 @@ function ProductInfo() {
                         padding: "80px 2rem",
                         boxSizing: "border-box"
                     }}>
-                        <div>
+                        <div className="head">
                             <h1>Solutions</h1>
                             <p>Learn more about our offerings</p>
                             <Link to='/contact-us'>
@@ -69,7 +69,7 @@ function ProductInfo() {
                                 }}>Contact Us</button>
                             </Link>
                         </div>
-                        <div style={{width: '45%'}}>
+                        <div style={{width: '45%'}} className="head-img">
                             <img src={solutions} style={{width: '100%'}}/>
                         </div>
                     </div>

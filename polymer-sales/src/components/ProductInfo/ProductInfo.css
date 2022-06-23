@@ -116,3 +116,50 @@
 .callback .main div {
     width: 100%;
 }
+
+@media screen and (max-width: 540px) {
+    .product-info .head h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .product-info .head p {
+        font-size: 0.9rem !important;
+    }
+
+    .product-info .head a, .product-info .head .custom-btn {
+        width: 100%;
+    }
+
+    .head-img {
+        display: none;
+    }
+
+    .price-elastiticty-estimator {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .price-elasticity-estimator h1 {
+        font-size: 1.5rem;
+    }
+
+    .price-elasticity-estimator p {
+        font-size: 0.9rem;
+    }
+
+    .price-elasticity-estimator .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-info .callback {
+        padding: 0 2rem;
+    }
+
+    .product-info .callback h1 {
+        font-size: 1.82rem;
+    }
+
+    .product-info .callback a, .product-info .callback .custom-btn {
+        width: 100%;
+    }
+}
